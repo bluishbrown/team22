@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import Navbar22 from "./Components/Navbar22/Navbar22"
 import AuthPanel from "./Components/AuthPanel/AuthPanel"
-// import userdata from './MOCK_DATA.json'
+import ItemCard from "./Components/ItemCard/ItemCard"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
+import imga from './Tempsrc/img.jpg'
+
+// import userdata from './Tempsrc/MOCK_DATA.json'
 
 // 메인화면 꾸미기에는 import Image from 'react-bootstrap/Image' 사용
 // https://react-bootstrap.netlify.app/components/images/ 참고하자.
@@ -25,11 +32,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Navbar22></Navbar22>
-        </header>
-
-        <AuthPanel></AuthPanel>
+        <Container>
+          <Row>
+            <Col xs={12}> <Navbar22></Navbar22> </Col>
+          </Row>
+          <Row>
+            <Col xs={9}><Image src={imga} fluid /></Col>
+            <Col xs={3}><AuthPanel></AuthPanel></Col>
+          </Row>
+          <Row>
+            <Col xs={12}><ItemCard></ItemCard></Col>
+          </Row>
+        </Container>
       </div>
     );
   }
