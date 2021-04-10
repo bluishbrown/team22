@@ -5,6 +5,18 @@ import {
 } from 'react-bootstrap'
 
 
+import Img2 from 'Tempsrc/Img2.jpg'
+import Img3 from 'Tempsrc/Img3.jpg'
+import Img4 from 'Tempsrc/Img4.jpg'
+import Img5 from 'Tempsrc/Img5.jpg'
+import Img6 from 'Tempsrc/Img6.jpg'
+import Img7 from 'Tempsrc/Img7.jpg'
+import Img8 from 'Tempsrc/Img8.jpg'
+import Img9 from 'Tempsrc/Img9.jpg'
+import Img10 from 'Tempsrc/Img10.jpg'
+
+
+
 class ItemCard extends Component {
     constructor(props) {
         super(props);
@@ -15,92 +27,83 @@ class ItemCard extends Component {
         return (
             <CardColumns>
                 <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Img variant="top" src={Img2} />
                     <Card.Body>
-                        <Card.Title>Card title that wraps to a new line</Card.Title>
+                        <Card.Title>대충 상품이름</Card.Title>
                         <Card.Text>
-                            This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <Card className="p-3">
-                    <blockquote className="blockquote mb-0 card-body">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                            erat a ante.
-                        </p>
-                        <footer className="blockquote-footer">
-                            <small className="text-muted">
-                                Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card bg="primary" text="white" className="text-center p-3">
-                    <blockquote className="blockquote mb-0 card-body">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                            erat a ante.
-                        </p>
-                        <footer className="blockquote-footer">
-                            <small className="text-muted">
-                                Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
-                </Card>
-                <Card className="text-center">
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This card has supporting text below as a natural lead-in to additional
-                            content.{' '}
-                        </Card.Text>
-                        <Card.Text>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                            대충 상품설명, 가격
                         </Card.Text>
                     </Card.Body>
                 </Card>
                 <Card>
-                    <Card.Img src="holder.js/100px160" />
-                </Card>
-                <Card className="text-right">
-                    <blockquote className="blockquote mb-0 card-body">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                            erat a ante.
-                        </p>
-                        <footer className="blockquote-footer">
-                            <small className="text-muted">
-                                Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
-                    </blockquote>
+                    <Card.Img variant="top" src={Img3} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
                 </Card>
                 <Card>
+                    <Card.Img variant="top" src={Img4} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
+                        <Card.Title>대충 상품이름</Card.Title>
                         <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to
-                            show that equal height action.
+                            대충 상품설명, 가격
                         </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img5} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
                         <Card.Text>
-                            <small className="text-muted">Last updated 3 mins ago</small>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img6} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img7} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img8} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img9} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={Img10} />
+                    <Card.Body>
+                        <Card.Title>대충 상품이름</Card.Title>
+                        <Card.Text>
+                            대충 상품설명, 가격
                         </Card.Text>
                     </Card.Body>
                 </Card>
