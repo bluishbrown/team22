@@ -1,20 +1,6 @@
 import React, { Component } from 'react';
-import Navbar22 from "./Components/Navbar22/Navbar22"
-import AuthPanel from "./Components/AuthPanel/AuthPanel"
-import ItemCard from "./Components/ItemCard/ItemCard"
-
-
-
-
-
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Image from 'react-bootstrap/Image'
-
-
-
-import Img1 from './Tempsrc/Img1.jpg'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Main, NotFound } from './Pages/Index';
 
 
 // import userdata from './Tempsrc/MOCK_DATA.json'
@@ -30,6 +16,11 @@ import Img1 from './Tempsrc/Img1.jpg'
 // 로그인하면 로그인창의 상태가 바뀐다.
 // 여러 변수를 한꺼번에 그룹을 만들까? js 에 그런 기능이 있나?
 
+// Switch 태그는 app 내에서 단 하나의 라우트만을 렌더링 시켜주는 역할을 한다.
+// main 이외에 상점페이지 등등 다른 것들을 추가해보자
+// EX) <Route exact Path="/shoppage" component={Shop} />
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -41,18 +32,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container>
-          <Row>
-            <Col xs={12}> <Navbar22></Navbar22> </Col>
-          </Row>
-          <Row>
-            <Col xs={9}><Image src={Img1} fluid /></Col>
-            <Col xs={3}><AuthPanel></AuthPanel></Col>
-          </Row>
-          <Row>
-            <Col xs={12}><ItemCard></ItemCard></Col>
-          </Row>
-        </Container>
+        <Switch>
+          <Route exact Path="/" component={Main} />
+          <Route path="*" component={NotFound} />
+        </Switch>
       </div>
     );
   }
