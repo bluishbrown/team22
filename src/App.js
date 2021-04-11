@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Main, NotFound } from './Pages/Index';
+import { Main, NotFound, Login } from './Pages/Index';
 
-
-// import userdata from './Tempsrc/MOCK_DATA.json'
 
 // 메인화면 꾸미기에는 import Image from 'react-bootstrap/Image' 사용
 // https://react-bootstrap.netlify.app/components/images/ 참고하자.
@@ -25,17 +23,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      LoginState: false
     }
   }
-  
 
   render() {
     return (
       <div className="App">
         <Switch>
-          <Route exact Path="/" component={Main} />
+
+          <Route exact path="/" component={Main} />
+
+          <Route path="/Login" component={Login} />
+
           <Route path="*" component={NotFound} />
+
         </Switch>
       </div>
     );
@@ -44,37 +45,3 @@ class App extends Component {
 
 
 export default App;
-
-
-
-
-
-/*
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      subject:{title:'WEB', sub:'World wide web!'},
-      contents:[
-        {id:1, title:'HTML', desc:'HTML is for information'},
-        {id:2, title:'CSS', desc:'CSS is for design'},
-        {id:3, title:'JavaScript', desc:'JavaScript is for interactive'}
-      ]
-    }
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Subject title={this.state.subject.title} 
-        sub={this.state.subject.sub}>
-        </Subject>
-        <TOC data={this.state.contents}></TOC>
-        <Content title="HTML" desc="HTML is HyperText Markup Language."></Content>
-      </div>
-    );
-  }
-}
-
-export default App;
-*/

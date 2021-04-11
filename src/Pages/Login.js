@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Form,
     Button
 } from 'react-bootstrap';
-
-
-
-
 
 
 // 로그인 안했을 때, 했을 때에 따라 패널이 다르게 표시된다.
@@ -14,17 +10,9 @@ import {
 
 
 
-class LoginForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    };
-
-    render() {
-        return (
-
-            <Form>
+const Login = () => {
+    return (
+        <Form>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
@@ -42,15 +30,11 @@ class LoginForm extends Component {
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Submit
-                    </Button>
+                </Button>
             </Form>
-
-        );
-    }
-
-}
+    );
+};
 
 
+export default Login;
 
-
-export default LoginForm;

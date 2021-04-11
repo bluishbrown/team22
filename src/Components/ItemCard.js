@@ -5,15 +5,15 @@ import {
 } from 'react-bootstrap'
 
 
-import Img2 from 'Tempsrc/Img2.jpg'
-import Img3 from 'Tempsrc/Img3.jpg'
-import Img4 from 'Tempsrc/Img4.jpg'
-import Img5 from 'Tempsrc/Img5.jpg'
-import Img6 from 'Tempsrc/Img6.jpg'
-import Img7 from 'Tempsrc/Img7.jpg'
-import Img8 from 'Tempsrc/Img8.jpg'
-import Img9 from 'Tempsrc/Img9.jpg'
-import Img10 from 'Tempsrc/Img10.jpg'
+import Img2 from 'Tempsrc/Img1.jpg'
+import Img3 from 'Tempsrc/Img1.jpg'
+import Img4 from 'Tempsrc/Img1.jpg'
+import Img5 from 'Tempsrc/Img1.jpg'
+import Img6 from 'Tempsrc/Img1.jpg'
+import Img7 from 'Tempsrc/Img1.jpg'
+import Img8 from 'Tempsrc/Img1.jpg'
+import Img9 from 'Tempsrc/Img1.jpg'
+import Img10 from 'Tempsrc/Img1.jpg'
 
 
 

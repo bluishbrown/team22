@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar22 from "Components/Navbar22";
-import LoginForm from "Components/LoginForm";
+import LoginButton from "Components/LoginButton";
 import ItemCard from "Components/ItemCard";
 
 
@@ -22,7 +22,7 @@ const Main = () => {
             </Row>
             <Row>
                 <Col xs={9}><Image src={Img1} fluid /></Col>
-                <Col xs={3}><LoginForm></LoginForm></Col>
+                <Col xs={3}><LoginButton></LoginButton></Col>
             </Row>
             <Row>
                 <Col xs={12}><ItemCard></ItemCard></Col>
