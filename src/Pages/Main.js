@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar22 from "Components/Navbar22/Navbar22";
-import AuthPanel from "Components/AuthPanel/AuthPanel";
-import ItemCard from "Components/ItemCard/ItemCard";
+import Navbar22 from "Components/Navbar22";
+import LoginForm from "Components/LoginForm";
+import ItemCard from "Components/ItemCard";
 
 
 import Container from 'react-bootstrap/Container';
@@ -22,7 +22,7 @@ const Main = () => {
             </Row>
             <Row>
                 <Col xs={9}><Image src={Img1} fluid /></Col>
-                <Col xs={3}><AuthPanel></AuthPanel></Col>
+                <Col xs={3}><LoginForm></LoginForm></Col>
             </Row>
             <Row>
                 <Col xs={12}><ItemCard></ItemCard></Col>

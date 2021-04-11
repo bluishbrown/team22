@@ -2,18 +2,24 @@ import React, { Component } from 'react';
 import {
     Form,
     Button
-} from 'react-bootstrap'
+} from 'react-bootstrap';
+
+
+
+
+
 
 // 로그인 안했을 때, 했을 때에 따라 패널이 다르게 표시된다.
 // https://react-bootstrap.netlify.app/components/forms/#forms 참고
 
 
 
-class AuthPanel extends Component {
+class LoginForm extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
-    }
+        this.state = {
+        };
+    };
 
     render() {
         return (
@@ -47,4 +53,4 @@ class AuthPanel extends Component {
 
 
 
-export default AuthPanel;
+export default LoginForm;
